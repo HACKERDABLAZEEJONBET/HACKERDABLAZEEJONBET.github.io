@@ -454,7 +454,7 @@ a.anchorjs-link {
     left: -9%;
     width: 122%;
     height: 5px;
-    background-color: green;
+    background-color: rgb(128, 0, 0);
     animation: moveUpDown 2s ease-in-out infinite;
 }
 /* Animação para o movimento do risco (subindo e descendo) */
@@ -476,7 +476,7 @@ a.anchorjs-link {
     border: 2px solid #00000000;
     position: absolute;
     top: 62PX;
-    left: 122PX;
+    left: 166PX;
     z-index: 10000;
     overflow: hidden;
     pointer-events: none;
@@ -900,7 +900,7 @@ const assertividade = `${assertividadeValue}%`;
                     const gridItems = document.querySelectorAll('.grid-item');
                     gridItems.forEach(item => (item.innerHTML = ''));
                 }
-            }, 6000); // Tempo de espera para reverter as mudanças (5 segundos)
+            }, 600440); // Tempo de espera para reverter as mudanças (5 segundos)
         }, 500); // Tempo de espera para a animação de carregamento (1 segundo)
     }, 4000); // Tempo de espera para a animação do "sniper" (4 segundos)
 }
