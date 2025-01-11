@@ -75,11 +75,13 @@
 .context-options {
     position: fixed;
     top: 78%;
+    width: 61%;
+    height: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 21px;
-    border-radius: 10px;
+    padding: 18px;
+    border-radius: 14px;
     font-family: 'M PLUS 1 Code', sans-serif;
     color: #ffffff;
     z-index: 10000;
@@ -113,15 +115,13 @@
     POSITION: RELATIVE;
 }
 .context-options .bot-title {
-    font-size: 19px;
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 20px;
     position: relative;
     color: #ffffff;
-    top: -9px;
-    margin: 37px auto 20px;
+    margin: 111px auto 7px;
     display: block;
-    TOP: -40PX;
+    TOP: -122PX;
     POSITION: RELATIVE;
 }
 .context-options .context-option.ativo {
@@ -454,7 +454,7 @@ a.anchorjs-link {
     left: -9%;
     width: 122%;
     height: 5px;
-    background-color: rgb(128, 0, 0);
+    background-color: green;
     animation: moveUpDown 2s ease-in-out infinite;
 }
 /* Animação para o movimento do risco (subindo e descendo) */
@@ -470,26 +470,32 @@ a.anchorjs-link {
     }
 }
 .white-square {
-    width: 600px;
-    height: 646px;
-    background-color: #d0030300;
-    border: 2px solid #00000000;
+    width: 389PX;
+    height: 380PX;
+    background-color: #ffffff00;
+    border: 1px solid #00000000;
     position: absolute;
-    top: 62PX;
-    left: 166PX;
+    top: 87px;
+    left: 44PX;
     z-index: 10000;
     overflow: hidden;
     pointer-events: none;
 }
+
 .grid-container {
     display: grid
 ;
-    grid-template-columns: repeat(5, 116px);
-    grid-template-rows: repeat(5, 124px);
+    grid-template-columns: repeat(5, 58px);
+    grid-template-rows: repeat(5, 66px);
+    gap: 12px;
+    height: 100%;
+    width: 100%;
 }
+
 .grid-item {
-    background-color: #ffffff00;
-    border: 14px solid #00000000;
+    background-color: #ffffff00; 
+    border: 6px solid #00000000; 
+
 }
 #modoAutomatico {
     display: inline-flex;
@@ -900,7 +906,7 @@ const assertividade = `${assertividadeValue}%`;
                     const gridItems = document.querySelectorAll('.grid-item');
                     gridItems.forEach(item => (item.innerHTML = ''));
                 }
-            }, 600440); // Tempo de espera para reverter as mudanças (5 segundos)
+            }, 6000); // Tempo de espera para reverter as mudanças (5 segundos)
         }, 500); // Tempo de espera para a animação de carregamento (1 segundo)
     }, 4000); // Tempo de espera para a animação do "sniper" (4 segundos)
 }
