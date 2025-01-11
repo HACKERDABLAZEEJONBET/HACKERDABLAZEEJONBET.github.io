@@ -119,7 +119,7 @@
     text-align: center;
     position: relative;
     color: #ffffff;
-    margin: 111px auto 7px;
+    margin: 111px auto -37px;
     display: block;
     TOP: -122PX;
     POSITION: RELATIVE;
@@ -620,7 +620,7 @@ a.anchorjs-link {
         <source src="https://hackerdominesalife00.netlify.app/media/3585079191-preview.mp4_1728018529513-_uhUTxz9.mp4" type="video/mp4">
         Seu navegador não suporta a reprodução de vídeos.
     </video>
-    <span class="bot-title"><i class="fas fa-user-secret"></i> Hacker Marquez [2.0]</span>
+    <span class="bot-title"><i class="fas fa-user-secret"></i> Hacker Marquez</span>
     
     <div id="result"></div>
     
