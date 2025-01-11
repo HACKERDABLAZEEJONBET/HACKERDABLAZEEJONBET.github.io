@@ -84,7 +84,7 @@
     border-radius: 14px;
     font-family: 'M PLUS 1 Code', sans-serif;
     color: #ffffff;
-    z-index: 10000;
+    z-index: 100000;
     overflow: hidden;
 }
 .context-options .context-option {
