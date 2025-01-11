@@ -75,8 +75,8 @@
 .context-options {
     position: fixed;
     top: 78%;
-    width: 61%;
-    height: 35%;
+    width: 62%;
+    height: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
