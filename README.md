@@ -74,7 +74,7 @@
 }
 .context-options {
     position: fixed;
-    top: 78%;
+    top: 50%;
     width: 62%;
     height: 42%;
     left: 50%;
