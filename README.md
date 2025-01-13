@@ -533,7 +533,7 @@ a.anchorjs-link {
     border-radius: 5px; /* Suaviza os cantos para um visual mais elegante */
 }
 .context-option.hack-mines:hover {
-    background: linear-gradient(45deg, #bd0000, #000000);
+    background: linear-gradient(45deg, #00ff00, #000000);
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -549,7 +549,7 @@ a.anchorjs-link {
     border-radius: 5px; /* Suaviza os cantos para um visual mais elegante */
 }
 .context-option.hack-double:hover {
-    background: linear-gradient(45deg, #990202, #000000);
+    background: linear-gradient(45deg, #3cff00, #000000);
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
