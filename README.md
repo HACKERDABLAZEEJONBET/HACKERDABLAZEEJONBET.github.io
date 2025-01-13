@@ -352,9 +352,9 @@
     }
 
   
-        #draggable-image img {
-    width: 137px;
-    top: 24px;
+    #draggable-image img {
+    width: 100px;
+    top: 10px;
     left: 36px;
     height: auto;
     position: fixed;
