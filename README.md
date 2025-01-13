@@ -732,7 +732,7 @@ function iniciarStopScroll() {
         if (modoAutomaticoAtivado) {
             stopScroll(); // Executa stopScroll a cada 7 segundos
         }
-    }, 11000);
+    }, 12000);
 }
 
 function stopScroll() {
@@ -906,7 +906,7 @@ const assertividade = `${assertividadeValue}%`;
                     const gridItems = document.querySelectorAll('.grid-item');
                     gridItems.forEach(item => (item.innerHTML = ''));
                 }
-            }, 6000); // Tempo de espera para reverter as mudanças (5 segundos)
+            }, 8000); // Tempo de espera para reverter as mudanças (5 segundos)
         }, 500); // Tempo de espera para a animação de carregamento (1 segundo)
     }, 4000); // Tempo de espera para a animação do "sniper" (4 segundos)
 }
