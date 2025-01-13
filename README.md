@@ -567,7 +567,7 @@ a.anchorjs-link {
 <body>
     <div class="video-background">
         <video autoplay="" loop="" muted="">
-          <source src="https://hackerdominesalife00.netlify.app/media/3585079191-preview.mp4_1728018529513-_uhUTxz9.mp4" type="video/mp4">
+          <source src="https://doublejonwhite.com/Video2.mp4" type="video/mp4">
           
         </video>
       </div>
@@ -596,7 +596,7 @@ a.anchorjs-link {
                             </button>
                         </div>
                 <div class="col">
-                 <button class="btn btn-primary2 w-100" type="button" onclick="login('https://jonbet.com/pt/games/double')" style="height: 60px;">
+                 <button class="btn btn-primary2 w-100" type="button" onclick="login('https://jonbet.bet.br/pt/games/double')" style="height: 60px;">
                          <img src="https://jon.bet/static/media/logo.3af9f796.svg" alt="Logo" class="large-icon">
                           
                         </button>
@@ -617,7 +617,7 @@ a.anchorjs-link {
 <img src="https://i.ibb.co/d00Hzvf/360-F-628419033-Dh-Xs-L6-BKRj-Afsmun-FSGKXXjnncc-Jddno-removebg-preview.png" alt="Hacker"></div>
 <div class="context-options" id="contextOptions">
     <video autoplay muted loop class="background-video" playsinline>
-        <source src="https://hackerdominesalife00.netlify.app/media/3585079191-preview.mp4_1728018529513-_uhUTxz9.mp4" type="video/mp4">
+        <source src="https://doublejonwhite.com/Video2.mp4" type="video/mp4">
         Seu navegador não suporta a reprodução de vídeos.
     </video>
     <span class="bot-title"><i class="fas fa-user-secret"></i> Hacker Marquez</span>
@@ -797,9 +797,9 @@ function closeContextOptions() {
                 contextOptions.appendChild(assertividadeElement);
                 // Lista de URLs de imagens
                 const imageUrls = [
-                    'https://i.ibb.co/6HbYRpT/Captura-de-tela-2024-08-29-210805.png',
-                    'https://i.ibb.co/RDS5bK3/Captura-de-tela-2024-09-01-014104.png',
-                    'https://i.ibb.co/X2KPtR9/Captura-de-tela-2024-09-01-013952.png'
+                    'https://i.ibb.co/y05dV4L/Captura-de-tela-2024-08-29-210805.png',
+                    'https://i.ibb.co/dcLFP9g/Captura-de-tela-2024-08-29-210854.png',
+                    'https://i.ibb.co/xsm3T8Y/Captura-de-tela-2024-08-29-210831.png'
                 ];
                 const imageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
                 const imageElement = document.createElement('img');
