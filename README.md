@@ -805,7 +805,7 @@ function closeContextOptions() {
                 // Lista de URLs de imagens
                 const imageUrls = [
                 'https://i.ibb.co/6HbYRpT/Captura-de-tela-2024-08-29-210805.png',
-                    'https://i.ibb.co/RDS5bK3/Captura-de-tela-2024-09-01-014104.png',
+                    'https://i.ibb.co/YB4YRD6/Captura-de-tela-2024-08-29-210854-4.png',
                     'https://i.ibb.co/8xVscZf/Captura-de-tela-2024-08-29-210831.png'
                 ];
                 const imageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
