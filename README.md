@@ -806,7 +806,7 @@ function closeContextOptions() {
                 const imageUrls = [
                 'https://i.ibb.co/6HbYRpT/Captura-de-tela-2024-08-29-210805.png',
                     'https://i.ibb.co/RDS5bK3/Captura-de-tela-2024-09-01-014104.png',
-                    'https://i.ibb.co/X2KPtR9/Captura-de-tela-2024-09-01-013952.png'
+                    'https://i.ibb.co/8xVscZf/Captura-de-tela-2024-08-29-210831.png'
                 ];
                 const imageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
                 const imageElement = document.createElement('img');
