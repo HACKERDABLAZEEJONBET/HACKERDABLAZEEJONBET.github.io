@@ -409,19 +409,6 @@ img, svg {
         height: 100vh;
         border: none; 
     }
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 62px);
-    grid-template-rows: repeat(5, 69px);
-    gap: 1px;
-    height: 100%;
-    width: 100%;
-}
-
-.grid-item {
-    background-color: #ffffff00;
-    border: 10px solid #00000000;
-}
   
 
         #draggable-image img {
@@ -689,29 +676,32 @@ a.anchorjs-link {
     cursor: pointer;
     pointer-events: auto; /* Permite cliques no botão */
 }
+      
 .white-square {
-    width: 402px;
-    height: 448px;
+    width: 500px;
+    height: 615px;
     position: absolute;
-    top: 110px;
-    left: 7px;
+    top: 178px;
+    left: 190px;
     z-index: 10000;
     overflow: hidden;
     pointer-events: none;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 76px);
-    grid-template-rows: repeat(5, 76px);
-    gap: 5px;
+    display: grid
+;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 56px);
+    gap: 35px;
     height: 100%;
     width: 100%;
 }
 .grid-item {
     background-color: #ffffff00;
-    border: 15px solid #00000000;
+    border: 0px solid #00000000;
 }
+
 
     </style>
 </head>
@@ -957,7 +947,7 @@ function stopScroll() {
 
             const gridItems = document.querySelectorAll('.grid-item');
             gridItems.forEach(item => item.innerHTML = '');
-        }, 8000);
+        }, 80222200);
     }, 5000);
 }
 
