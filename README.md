@@ -1,5 +1,4 @@
 
-
 <html lang="en">
 
 <head>
@@ -881,25 +880,21 @@ function login(url) {
     }
 
     setTimeout(() => {
-        // Após exibir o overlay, removê-lo
         if (loadingOverlay) {
             loadingOverlay.style.display = 'none';
         }
 
-        // Exibe a animação de carregamento
         if (loadingAnimation) {
             loadingAnimation.classList.remove('loading-hidden');
             loadingAnimation.classList.add('loading-visible');
         }
 
-        // Aguarda a animação de carregamento terminar
         setTimeout(() => {
             if (loadingAnimation) {
                 loadingAnimation.classList.remove('loading-visible');
                 loadingAnimation.classList.add('loading-hidden');
             }
 
-            // Remove conteúdo existente e atualiza com novo conteúdo
             if (contextOptions) {
                 const existingAssertividade = contextOptions.querySelector('.assertividade');
                 const existingImage = contextOptions.querySelector('.random-image');
@@ -911,7 +906,7 @@ function login(url) {
                 const assertividadeValue = (Math.random() * 100).toFixed(2);
                 const assertividade = `${assertividadeValue}%`;
 
-                // Cria o elemento de assertividade com efeito suave
+                // Cria o elemento de assertividade
                 const assertividadeElement = document.createElement('div');
                 assertividadeElement.textContent = `Assertividade: ${assertividade}`;
                 assertividadeElement.className = 'assertividade';
@@ -923,11 +918,7 @@ function login(url) {
                 assertividadeElement.style.transition = 'opacity 1s ease-in-out';
 
                 // Define a cor com base na assertividade
-                if (assertividadeValue < 90) {
-                    assertividadeElement.style.color = 'red';
-                } else {
-                    assertividadeElement.style.color = 'green';
-                }
+                assertividadeElement.style.color = assertividadeValue < 90 ? 'red' : 'green';
 
                 contextOptions.appendChild(assertividadeElement);
                 setTimeout(() => {
@@ -966,23 +957,25 @@ function login(url) {
                     voz.lang = 'pt-BR';
 
                     if (assertividadeValue < 90) {
-                        voz.text = "Sinal abaixo de 90%. Não fazer entrada.";
+                        voz.text = "Sinal abaixo de 90%. Não faça entrada.";
                     } else {
                         voz.text = `Fazer entrada na cor ${imagemSelecionada.cor} com assertividade de ${assertividade}.`;
                     }
 
-                    // Seleciona uma voz mais natural, se disponível
+                    // Seleciona a melhor voz brasileira disponível
                     const voices = speechSynthesis.getVoices();
-                    const vozSelecionada = voices.find(voice => voice.name.includes("Google") || voice.name.includes("Luciana")) || voices[0];
+                    const vozSelecionada = voices.find(voice => voice.lang === "pt-BR" && voice.name.includes("Google")) || 
+                                           voices.find(voice => voice.lang === "pt-BR") || 
+                                           voices[0];
 
                     if (vozSelecionada) {
                         voz.voice = vozSelecionada;
                     }
 
-                    // Ajusta a voz para parecer mais natural
-                    voz.rate = 0.9;
-                    voz.pitch = 0.95;
-                    voz.volume = 1;
+                    // Ajusta a voz para ser mais rápida e natural
+                    voz.rate = 1.2; // Agora está mais rápida
+                    voz.pitch = 1;  // Tom equilibrado
+                    voz.volume = 1;  // Volume máximo
 
                     speechSynthesis.speak(voz);
                 }, 1200);
