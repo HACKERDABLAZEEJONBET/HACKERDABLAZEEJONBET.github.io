@@ -874,7 +874,6 @@ function login(url) {
     const contextOptions = document.getElementById('contextOptions');
     const loadingOverlay = document.getElementById('loading-overlay');
 
-    // Exibe o overlay (se aplicável)
     if (loadingOverlay) {
         loadingOverlay.style.display = 'flex';
     }
@@ -917,7 +916,6 @@ function login(url) {
                 assertividadeElement.style.opacity = '0';
                 assertividadeElement.style.transition = 'opacity 1s ease-in-out';
 
-                // Define a cor com base na assertividade
                 assertividadeElement.style.color = assertividadeValue < 90 ? 'red' : 'green';
 
                 contextOptions.appendChild(assertividadeElement);
@@ -927,9 +925,9 @@ function login(url) {
 
                 // Lista de URLs de imagens e cores associadas
                 const imageUrls = [
-                    { url: 'https://i.ibb.co/X2KPtR9/Captura-de-tela-2024-09-01-013952.png', cor: 'vermelha' },
-                    { url: 'https://i.ibb.co/6HbYRpT/Captura-de-tela-2024-08-29-210805.png', cor: 'preta' },
-                    { url: 'https://i.ibb.co/RDS5bK3/Captura-de-tela-2024-09-01-014104.png', cor: 'branca' }
+                    { url: 'https://i.ibb.co/X2KPtR9/Captura-de-tela-2024-09-01-013952.png', cor: 'vermelho' },
+                    { url: 'https://i.ibb.co/6HbYRpT/Captura-de-tela-2024-08-29-210805.png', cor: 'preto' },
+                    { url: 'https://i.ibb.co/RDS5bK3/Captura-de-tela-2024-09-01-014104.png', cor: 'branco' }
                 ];
 
                 // Escolhe aleatoriamente uma imagem e sua cor associada
@@ -959,7 +957,7 @@ function login(url) {
                     if (assertividadeValue < 90) {
                         voz.text = "Sinal abaixo de 90%. Não faça entrada.";
                     } else {
-                        voz.text = `Fazer entrada na cor ${imagemSelecionada.cor} com assertividade de ${assertividade}.`;
+                        voz.text = `Fazer entrada na cor ${imagemSelecionada.cor} com assertividade de ${assertividadeValue} por cento.`;
                     }
 
                     // Seleciona a melhor voz brasileira disponível
