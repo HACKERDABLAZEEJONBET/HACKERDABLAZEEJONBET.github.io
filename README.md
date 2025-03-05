@@ -430,7 +430,7 @@ img, svg {
   
 
         #draggable-image img {
-    width: 137px;
+    width: 99px;
     top: 24px;
     left: 36px;
     height: auto;
