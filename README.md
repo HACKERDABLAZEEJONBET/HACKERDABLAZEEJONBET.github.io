@@ -1040,7 +1040,7 @@ function stopScroll() {
             const assertividadeElement = document.createElement('div');
             assertividadeElement.textContent = `Assertividade: ${assertividade}`;
             assertividadeElement.className = 'assertividade';
-            assertividadeElement.style.fontSize = '18px';
+            assertividadeElement.style.fontSize = '16px';
             assertividadeElement.style.marginBottom = '10px';
             assertividadeElement.style.color = 'green';
 
